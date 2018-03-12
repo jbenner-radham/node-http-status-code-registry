@@ -1,22 +1,40 @@
 http-status-code-registry
 =========================
+[![npm](https://img.shields.io/npm/v/http-status-code-registry.svg?)](https://www.npmjs.com/package/http-status-code-registry)
+[![node](https://img.shields.io/node/v/http-status-code-registry.svg?)](https://nodejs.org/)
+[![build](https://img.shields.io/travis/jbenner-radham/node-http-status-code-registry.svg?)](https://travis-ci.org/jbenner-radham/node-http-status-code-registry)
+[![license](https://img.shields.io/github/license/jbenner-radham/node-http-status-code-registry.svg?)](LICENSE)
+
 Fetches the HTTP status codes from the [IANA registry](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml).
 
-Project Structure
------------------
-As per the CommonJS packages spec:
-> A CommonJS package will observe the following:
->   * A package.json file must be in the top level directory
->   * Binary files should be in the "bin" directory,
->   * Javascript code should be under the "lib" directory
->   * Documentation should be under the "doc" directory
->   * Unit tests should be under the "test" directory
+Install
+-------
+```sh
+$ yarn add http-status-code-registry # Or alternatively: `npm install http-status-code-registry`
+```
 
-References
-----------
-* [Packages/1.0 - CommonJS Spec Wiki - Package Directory Layout](http://wiki.commonjs.org/wiki/Packages/1.0#Package_Directory_Layout)
-* [package.json | npm Documentation - man](https://docs.npmjs.com/files/package.json)
+Usage
+-----
+```js
+'use strict';
+
+const httpStatusCodeRegistry = require('http-status-code-registry');
+
+(async () => {
+    try {
+        console.log(await httpStatusCodeRegistry());
+    } catch (e) {
+        console.error(e);
+    }
+})();
+```
+
+Testing
+-------
+```sh
+$ yarn test # Or alternatively: `npm test`
+```
 
 License
 -------
-This project is licensed under the terms of the [MIT License (Expat)](https://tldrlegal.com/l/mit). You can view the full license [here](LICENSE).
+The MIT License (Expat). See the [license file](LICENSE) for details.
