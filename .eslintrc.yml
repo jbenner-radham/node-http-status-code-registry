@@ -1,8 +1,8 @@
 ---
 extends: eslint:recommended
+parserOptions:
+  ecmaVersion: 2018
 env:
-  es6:   true
-  mocha: true
-  node:  true
-rules:
-  no-console: off
+  es6: true
+  jasmine: true
+  node: true
