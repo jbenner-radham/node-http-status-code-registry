@@ -11,6 +11,7 @@
     "test": "test"
   },
   "scripts": {
+    "prepublishOnly": "trevor",
     "pretest": "eslint {lib,spec}",
     "test": "jasmine"
   },
@@ -34,7 +35,8 @@
   },
   "devDependencies": {
     "eslint": "^4.18.2",
-    "jasmine": "^3.1.0"
+    "jasmine": "^3.1.0",
+    "trevor": "^2.3.0"
   },
   "engines": {
     "node": ">=7.10"
