@@ -1,3 +1,6 @@
+# Build artifacts
+http-status-code-registry.json
+
 # Logs
 logs
 *.log
