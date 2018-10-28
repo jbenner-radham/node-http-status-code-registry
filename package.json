@@ -7,8 +7,7 @@
   "license": "MIT",
   "private": false,
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "scripts": {
     "prepublishOnly": "trevor",
