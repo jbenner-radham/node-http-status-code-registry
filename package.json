@@ -1,24 +1,8 @@
 {
   "name": "http-status-code-registry",
   "version": "0.1.0",
-  "description": "Fetches the HTTP status codes from the IANA registry.",
-  "main": "./lib/index.js",
-  "author": "James Benner <james.benner@gmail.com> (https://www.jamesbenner.com/)",
-  "license": "MIT",
   "private": false,
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "dev": "node ./index.js",
-    "prepublishOnly": "trevor",
-    "pretest": "eslint {lib,spec}",
-    "test": "jasmine"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jbenner-radham/node-http-status-code-registry.git"
-  },
+  "description": "Fetches the HTTP status codes from the IANA registry.",
   "keywords": [
     "http",
     "status",
@@ -26,10 +10,29 @@
     "iana",
     "registry"
   ],
+  "homepage": "https://github.com/jbenner-radham/node-http-status-code-registry#readme",
   "bugs": {
     "url": "https://github.com/jbenner-radham/node-http-status-code-registry/issues"
   },
-  "homepage": "https://github.com/jbenner-radham/node-http-status-code-registry#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenner-radham/node-http-status-code-registry.git"
+  },
+  "license": "MIT",
+  "author": "James Benner <james.benner@gmail.com> (https://www.jamesbenner.com/)",
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "dev": "node ./index.js",
+    "prepublishOnly": "trevor",
+    "pretest": "eslint {lib,spec}",
+    "test": "jasmine"
+  },
   "dependencies": {},
   "devDependencies": {
     "eslint": "^4.18.2",
